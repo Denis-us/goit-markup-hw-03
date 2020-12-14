@@ -20,6 +20,14 @@ body {
     font-family: Roboto, sans-serif;
 }
 
+.container {
+    width: 1230px;
+    padding-left: 15px;
+    padding-right: 15px;
+    margin-left: 200;
+    margin-right: 200;
+}
+
 .logo-header {
     color: var(--main-text-color);
     font-family: Raleway;
@@ -67,11 +75,6 @@ body {
 .site-nav .link:hover,
 .site-nav .link:focus {
     color: var(--accent-color);
-    font-weight: 500;
-    font-size: 14px;
-    line-height: 1.14;
-    letter-spacing: 0.02em;
-    text-decoration: none;
 }
 .site-nav {
     list-style-type: none;
@@ -114,20 +117,32 @@ body {
 .hero {
     background-color: var(--third-bg-color);
 
+    text-align: center;
 }
 .hero-title{
     color: var(--main-bg-color);
+
     font-weight: 900;
     font-size: 44px;
     line-height: 1.36;
     text-align: center;
     letter-spacing: 0.06em;
     text-transform: uppercase;
+
+    margin-top: 0;
+    margin-bottom: 0;
 }
 
 /* Section */
+.section {
+    padding-top: 94px;
+    padding-bottom: 94px
+}
+
 .section-team {
     background-color: var(--secondary-bg-color);
+    padding-top: 94px;
+    padding-bottom: 94px
 }
 
 .section-title {
@@ -136,6 +151,9 @@ body {
     line-height: 1.6;
     text-align: center;
     letter-spacing: 0.03em;
+
+    margin-top: 0;
+    margin-bottom: 0;
 }
 
 .qualities-title {
@@ -144,13 +162,20 @@ body {
     line-height: 1.14;
     letter-spacing: 0.03em;
     text-transform: uppercase;
+
+    margin-top: 0;
+    margin-bottom: 0;
 }
 
 .qualities-text {
     color: var(--secondary-text-color);
+
     font-size: 14px;
     line-height: 1.7;
     letter-spacing: 0.03em;
+
+    margin-top: 10px;
+    margin-bottom: 0;
 }
 
 
@@ -175,6 +200,7 @@ body {
 .primary-button {
     color: var(--main-bg-color);
     background-color: var(--accent-color);
+
     font-weight: bold;
     font-size: 16px;
     line-height: 1.87;
@@ -184,30 +210,39 @@ body {
     letter-spacing: 0.06em;
     text-decoration: none;
 
+    display: inline-block;
+    margin-top: 30px;
+    text-align: center;
+    border-radius: 4px;
+    padding: 10px 32px;
 }
 
 .button {
     background-color: var(--secondary-bg-color);
+
     font-family: Roboto;
     font-weight: 500;
     font-size: 16px;
     line-height: 1.62;
     letter-spacing: 0.03em;
+
+    display: inline-block;
+    text-align: center;
+    border: none;
+    border-radius: 4px;
+    padding: 6px 22px;
 }
 
 .button:hover,
 .button:focus {
     color: var(--main-bg-color);
     background-color: var(--accent-color);
-    font-family: Roboto;
-    font-weight: 500;
-    font-size: 16px;
-    line-height: 1.62;
-    letter-spacing: 0.03em;
 }
 
 .list {
     list-style-type: none;
+    padding: 0;
+    margin: 0;
 }
 
 footer {
