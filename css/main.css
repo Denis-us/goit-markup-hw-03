@@ -312,7 +312,8 @@ nav {
 }
 
 .dir,
-.spec {
+.spec,
+.qual {
     margin-right: 30px;
 }
 
