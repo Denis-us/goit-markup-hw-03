@@ -317,6 +317,10 @@ nav {
     margin-right: 30px;
 }
 
+.qual:last-child {
+    margin-right: 0px;
+}
+
 .container-element.spec {
     width: 270px;
     height: 368px;
