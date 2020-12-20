@@ -21,11 +21,8 @@ body {
 }
 
 .container {
-    width: 1230px;
-    padding-left:15px;
-    padding-right:15px;
-    padding-top: 94px;
-    padding-bottom: 94px;
+    width: 1200px;
+
     margin: 0 auto;
 }
 
@@ -63,12 +60,16 @@ h1, h2, li, a, ul {
 
 
 /* Header */
+header {
+    border-bottom: 1px solid #ECECEC;
+}
+
 .container.header {
     display: flex;
     align-items: center;
     padding-top: 32px;
     padding-bottom: 32px;
-    border-bottom: 1px solid #ECECEC;
+
 }
 
 nav {
@@ -126,16 +127,6 @@ nav {
     letter-spacing: 0.02em;
 }
 
-.header-address .mail {
-    margin-right: 50px;
-}
-
-.container.footer {
-    padding-top:60px;
-    padding-bottom: 60px;
-}
-
-
 .footer-address a,
 .footer-address p {
     display: block;
@@ -162,11 +153,14 @@ nav {
     text-decoration: none;
 }
 
-.mail {
-    color: var(--accent-color);
-    text-decoration: none;
+.contact:not(:last-child) {
+    margin-right: 50px;
 }
 
+.contact:hover,
+.contact:focus {
+    color: var(--accent-color);
+}
 /* Hero */
 .hero {
     background-color: var(--third-bg-color);
@@ -201,9 +195,19 @@ nav {
     margin-bottom: 50px;
 }
 
-.section-team {
+.section-qualities {
+    padding-top: 94px;
+    padding-right: 15px;
+    padding-left: 15px;
+}
+
+.section-direction {
+    padding: 94px 15px;
+}
+
+.section.team {
     background-color: var(--secondary-bg-color);
-    padding-bottom: 94px;
+    padding: 94px 15px;
 }
 
 .section-title {
@@ -297,21 +301,29 @@ nav {
     margin-right: 8px;
 }
 
-.buttons {
-    margin-bottom: 50px;
+.sort-buttons {
+    padding-top: 94px;
 }
+
 
 .list {
     display: flex;
-    justify-content: center;
+
     list-style-type: none;
+}
+
+.list.buttons {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 50px;
 }
 
 .list.projects {
     flex-wrap: wrap;
+    margin-bottom: 94px;
 }
 
-.dir,
+.dir:not(:last-child),
 .spec,
 .qual {
     margin-right: 30px;
@@ -346,8 +358,15 @@ nav {
     margin-bottom: 0px;
 }
 
-footer {
-    background-color: var(--third-bg-color)
+.description {
+    padding: 20px 24px;
+}
+
+.footer {
+    background-color: var(--third-bg-color);
+
+    padding-top: 60px;
+    padding-bottom: 60px;
 }
 
 /* Projects */
@@ -358,9 +377,6 @@ footer {
     letter-spacing: 0.03em;
 
     margin-top: 4px;
-    padding-bottom: 20px;
-    padding-left: 24px;
-    padding-right: 24px;
 }
 
 .project {
@@ -373,8 +389,4 @@ footer {
     font-size: 18px;
     line-height: 2;
     letter-spacing: 0.06em;
-
-    margin-top: 20px;
-    padding-left: 24px;
-    padding-right: 24px;
 }
