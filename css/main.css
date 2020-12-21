@@ -27,7 +27,7 @@ body {
     margin: 0 auto;
 }
 
-h1, h2, li, a, ul {
+h1, h2, h3, li, a, ul, p {
     margin-top: 0;
     margin-bottom: 0;
     padding: 0;
@@ -142,6 +142,7 @@ nav {
     line-height: 1.7;
     letter-spacing: 0.03em;
 
+    margin-top: 20px;
 }
 
 .contact {
@@ -201,12 +202,14 @@ nav {
 }
 
 .section-direction {
-    padding: 94px;
+    padding-top: 94px;
+    padding-bottom: 94px;
 }
 
 .section.team {
     background-color: var(--secondary-bg-color);
-    padding: 94px;
+    padding-top: 94px;
+    padding-bottom: 94px;
 }
 
 .section-title {
@@ -233,6 +236,7 @@ nav {
     line-height: 1.7;
     letter-spacing: 0.03em;
 
+    margin-top: 10px;
 }
 
 
@@ -361,7 +365,7 @@ nav {
     padding: 20px 24px;
 }
 
-.footer {
+footer {
     background-color: var(--third-bg-color);
 
     padding-top: 60px;
@@ -374,6 +378,8 @@ nav {
     font-size: 16px;
     line-height: 1.87;
     letter-spacing: 0.03em;
+
+    margin-top: 4px;
 }
 
 .project {
