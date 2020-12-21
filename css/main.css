@@ -255,6 +255,13 @@ nav {
     line-height: 1.2;
     text-align: center;
     letter-spacing: 0.03em;
+
+    margin-top:10px;
+
+}
+.info {
+    padding-top: 30px;
+    padding-bottom: 30px;
 }
 
 /* Button */
